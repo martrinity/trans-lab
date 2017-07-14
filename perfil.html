@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="perfil-body">
 	<nav>
 		<ul id="slide-out" class="side-nav">
 			<li><a href="#!"><i class="material-icons">attach_money</i>Ver saldo</a></li>
@@ -21,15 +21,23 @@
 		<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 		<h6 class="center-align" id="nav-title">TRANS-LAB</h6>
 	</nav>
-	<div class="container">
+	<div class="container-flex">
 		<div class="row persona">
 			<div class="col s6 offset-s3">
-				<img src="docs/default-user.png" class="responsive-img" alt="User">
+				<img src="docs/default-user.png" id="default-img" class="responsive-img" alt="User">
 			</div>
 		</div>
 		<div class="row">
-			<div class="col s8 offset-s2">
-				
+			<div class="col s10 offset-s1">
+				<p>correo ingresado por usuario</p>
+			</div>
+			<div class="input-field col s10 offset-s1">
+				<input id="nro-tarjeta" type="text" class="validate">
+				<label for="nro-tarjeta">Agregar Tarjeta</label>
+				<button id="agregar-tarjeta">AGREGAR TARJETA</button>
+			</div>
+			<div id="tarjetas-save" class="col s10 offset-s1">
+				<!-- aca se iran creando contenedores de nros de tarjetas ingresados -->
 			</div>
 		</div>
 	</div>

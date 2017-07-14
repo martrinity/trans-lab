@@ -73,7 +73,7 @@ nav{
 	padding-top: 25%;
 }
 
-#opciones-body{
+#opciones-body, #perfil-body{
 	background-color: #dddddd;
 }
 
@@ -93,6 +93,16 @@ nav{
 	background-color: #EEA019;
 }
 
-#default-img{
-	margin: 60px 0;
+.persona img{
+	padding-top: 35px;
+}
+
+#agregar-tarjeta{
+
+	border-style: none;
+	height: 4rem;
+	width: 100%;
+	background-color: #EEA019;
+	font-size: 20px;
+	color: #fff;
 }
