@@ -35,7 +35,7 @@ $(document).ready(function($) {
       dataType: 'json'
     })
     .done(function(resp) {
-      $('#mostrar-saldo').append('<div class="alerta-saldo"><p>SALDO TOTAL</p><h5>' + res.saldoTarjeta + '</h5></div>');
+      $('#mostrar-saldo').append('<div class="alerta-saldo"><p>SALDO TOTAL</p><h5>' + resp.saldoTarjeta + '</h5></div>');
     })
     .fail(function() {
       console.log("error");
