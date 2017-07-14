@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body id="perfil-body">
+<body>
 	<nav>
 		<ul id="slide-out" class="side-nav">
 			<li><a href="#!"><i class="material-icons">attach_money</i>Ver saldo</a></li>
@@ -21,30 +21,23 @@
 		<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 		<h6 class="center-align" id="nav-title">TRANS-LAB</h6>
 	</nav>
-	
 	<div class="container-flex">
-		<div class="row persona">
-			<div class="col s6 offset-s3">
-				<img src="docs/default-user.png" id="default-img" class="responsive-img" alt="User">
-			</div>
-		</div>
 		<div class="row">
-			<div class="col s10 offset-s1">
-				<p>correo ingresado por usuario</p>
-			</div>
 			<div class="input-field col s10 offset-s1">
 				<input id="nro-tarjeta" type="text" class="validate">
 				<label for="nro-tarjeta">Agregar Tarjeta</label>
-				<button id="agregar-tarjeta">AGREGAR TARJETA</button>
+				<button id="saldo">VER SALDO</button>
 			</div>
-			<div id="tarjetas-save" class="col s10 offset-s1">
-				<!-- aca se iran creando contenedores de nros de tarjetas ingresados -->
+		</div>
+		<div class="row">
+			<div id="mostrar-saldo" class="col s8 offset-s2">
+				<!-- acá traeré saldo desde la api -->
 			</div>
 		</div>
 	</div>
 
-
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
 	<script src="js/opciones.js"></script>
 </body>
 </html>

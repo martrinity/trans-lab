@@ -1,7 +1,7 @@
 $(document).ready(function($) {
-	$(".button-collapse").sideNav();
+  $(".button-collapse").sideNav();
 
-	
+  consultaSaldo();
 });
 
  // Show sideNav
@@ -10,7 +10,7 @@ $(document).ready(function($) {
   $('.button-collapse').sideNav('hide');
   // Destroy sideNav
   $('.button-collapse').sideNav('destroy');
-	
+  
    $('.button-collapse').sideNav({
       menuWidth: 300, 
       edge: 'left', 
@@ -18,4 +18,30 @@ $(document).ready(function($) {
       draggable: true, 
 
     }
+
+
   );
+
+   $('#saldo').click(function(){
+  consultaSaldo();
+
+   function consultaSaldo(){
+    var bipCode = $('#nro-tarjeta').val();
+
+    $.ajax({
+      url: `https://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${bipCode}`,
+      type: 'GET',
+      dataType: 'json'
+    })
+    .done(function(resp) {
+      $('#mostrarSaldo').append('<div class="alerta-saldo"><p>SALDO TOTAL</p><h5>' + res.saldoTarjeta + '</h5></div>');
+    })
+    .fail(function() {
+      console.log("error");
+    })
+    .always(function() {
+      console.log("complete");
+    });
+    
+   }
+   /*Se que pronto ajax y yo seremos felices y comeremos chocolate bajo un arbol lalalala*/
