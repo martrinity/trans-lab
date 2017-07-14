@@ -86,3 +86,13 @@ nav{
 }
 
 /*hasta aqui estilos de opciones y sidebar*/
+
+
+.persona{
+	height: 250px;
+	background-color: #EEA019;
+}
+
+#default-img{
+	margin: 60px 0;
+}
