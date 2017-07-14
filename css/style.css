@@ -1,1 +1,47 @@
-/* YeyeYeee código aquí */
+*{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #3e3f41;
+}
+
+#brand h5{
+	font-weight: bolder;
+	color: #EEA019;
+}
+
+#inicio{
+	padding-top: 60px;
+}
+
+.signin{
+	border:none;
+	background-color: #fff;
+}
+
+i{
+	color: #6D6666;
+}
+
+#correo, #contraseña{
+	border: none;
+	height: 2rem;
+}
+
+#inicio-sesion{
+	border-style: none;
+	height: 4rem;
+	background-color: #EEA019;
+	font-size: 20px;
+	color: #3e3f41;
+
+}
+
+a{
+	text-decoration: none;
+	color:#EEA019;
+}
+
