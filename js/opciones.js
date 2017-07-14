@@ -24,6 +24,7 @@ $(document).ready(function($) {
 
    $('#saldo').click(function(){
   consultaSaldo();
+   });
 
    function consultaSaldo(){
     var bipCode = $('#nro-tarjeta').val();
@@ -34,7 +35,7 @@ $(document).ready(function($) {
       dataType: 'json'
     })
     .done(function(resp) {
-      $('#mostrarSaldo').append('<div class="alerta-saldo"><p>SALDO TOTAL</p><h5>' + res.saldoTarjeta + '</h5></div>');
+      $('#mostrar-saldo').append('<div class="alerta-saldo"><p>SALDO TOTAL</p><h5>' + res.saldoTarjeta + '</h5></div>');
     })
     .fail(function() {
       console.log("error");
