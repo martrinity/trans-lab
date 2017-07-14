@@ -51,3 +51,26 @@ a{
 	color:#EEA019;
 }
 
+/*Hasta aqui estilos de primera vista*/
+nav{
+	background-color: #3e3f41;
+}
+
+#nav-title{
+	line-height: 4;
+}
+#botonera button{
+	width: 100%;
+	margin-top: 20px;
+	background-color: #EEA019;
+	font-size: 20px;
+
+}
+
+#botonera{
+	padding-top: 25%;
+}
+
+#opciones-body{
+	background-color: #dddddd;
+}
