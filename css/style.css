@@ -54,10 +54,12 @@ a{
 /*Hasta aqui estilos de primera vista*/
 nav{
 	background-color: #3e3f41;
+	padding-top: 0;
 }
 
 #nav-title{
 	line-height: 4;
+	margin-top: 0;
 }
 #botonera button{
 	width: 100%;
@@ -73,4 +75,12 @@ nav{
 
 #opciones-body{
 	background-color: #dddddd;
+}
+
+#slide-out{
+	padding-top: 20px;
+}
+
+.side-nav li>a>i.material-icons{
+	color: #EEA019;
 }
